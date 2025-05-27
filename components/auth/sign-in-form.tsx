@@ -10,14 +10,12 @@ import {
 
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
-import { signIn } from '@/lib/auth-client';
+import { signIn } from '@/lib/authClient';
 import { toast } from 'sonner';
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-
-// Thisisatest123
 
 const formSchema = z.object({
   email: z.string().email(),

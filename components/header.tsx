@@ -8,7 +8,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { signOut } from '@/lib/auth-client';
+import { signOut } from '@/lib/authClient';
 
 import { CircleUserRound } from 'lucide-react';
 import Image from 'next/image';

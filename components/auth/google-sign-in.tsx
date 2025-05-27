@@ -1,6 +1,6 @@
 'use client';
 
-import { signIn } from '@/lib/auth-client';
+import { signIn } from '@/lib/authClient';
 import { GoogleLogo } from './google-logo';
 import { toast } from 'sonner';
 

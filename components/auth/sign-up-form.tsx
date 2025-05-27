@@ -9,14 +9,12 @@ import {
 } from '@/components/ui/form';
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
-import { signUp } from '@/lib/auth-client';
+import { signUp } from '@/lib/authClient';
 import { toast } from 'sonner';
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-
-// password: Thisisatest123
 
 const formSchema = z.object({
   email: z.string().email(),

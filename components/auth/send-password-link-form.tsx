@@ -10,7 +10,7 @@ import {
 
 import { Button } from '../ui/button';
 import { Input } from '../ui/input';
-import { forgetPassword } from '@/lib/auth-client';
+import { forgetPassword } from '@/lib/authClient';
 import { toast } from 'sonner';
 
 import { zodResolver } from '@hookform/resolvers/zod';

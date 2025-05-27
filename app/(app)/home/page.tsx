@@ -1,11 +1,8 @@
-import { auth } from '@/lib/auth';
-import { headers } from 'next/headers';
+import { verifySession } from '@/lib/dal/verifySession';
 import { redirect } from 'next/navigation';
 
 export default async function HomePage() {
-  const session = await auth.api.getSession({
-    headers: await headers(),
-  });
+  const { session } = await verifySession();
 
   if (!session) {
     redirect('/signin');
